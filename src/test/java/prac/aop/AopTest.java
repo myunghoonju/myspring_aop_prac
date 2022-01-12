@@ -13,6 +13,7 @@ import prac.aop.order.aop.AspectV2;
 import prac.aop.order.aop.AspectV3;
 import prac.aop.order.aop.AspectV4Pointcut;
 import prac.aop.order.aop.AspectV5Order;
+import prac.aop.order.aop.AspectV6Advice;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
@@ -20,7 +21,8 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 //@Import(AspectV2.class)
 //@Import(AspectV3.class)
 //@Import(AspectV4Pointcut.class)
-@Import({AspectV5Order.LogAspect.class, AspectV5Order.TxAspect.class})
+//@Import({AspectV5Order.LogAspect.class, AspectV5Order.TxAspect.class})
+@Import(AspectV6Advice.class)
 @Slf4j
 @SpringBootTest
 public class AopTest {
