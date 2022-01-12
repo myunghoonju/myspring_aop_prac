@@ -9,10 +9,14 @@ import org.springframework.context.annotation.Import;
 import prac.aop.order.OrderRepository;
 import prac.aop.order.OrderService;
 import prac.aop.order.aop.AspectV1;
+import prac.aop.order.aop.AspectV2;
+import prac.aop.order.aop.AspectV3;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-@Import(AspectV1.class)
+//@Import(AspectV1.class)
+//@Import(AspectV2.class)
+@Import(AspectV3.class)
 @Slf4j
 @SpringBootTest
 public class AopTest {
