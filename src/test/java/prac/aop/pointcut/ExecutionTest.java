@@ -23,8 +23,8 @@ public class ExecutionTest {
 
     }
 
-    // public java.lang.String prac.aop.member.MemberServiceImpl.call(java.lang.String)
     @Test
+    @DisplayName("public java.lang.String prac.aop.member.MemberServiceImpl.call(java.lang.String)")
     void printMethod() {
          log.debug("method = {}", method);
     }
